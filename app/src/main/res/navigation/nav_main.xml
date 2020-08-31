@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/nav_status">
+
+    <action
+        android:id="@+id/action_end_of_life"
+        app:destination="@id/nav_end_of_life"
+        app:popUpTo="@id/main_nav"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/nav_status"
+        android:name="nl.rijksoverheid.en.status.StatusFragment"
+        tools:layout="@layout/fragment_status">
+        <action
+            android:id="@+id/action_onboarding"
+            app:destination="@id/nav_onboarding"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+
+        <action
+            android:id="@+id/action_update_play_services"
+            app:destination="@id/nav_update_google_play_services"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_lab_test"
+            app:destination="@id/nav_lab_test"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_generic_notification"
+            app:destination="@id/genericNotificationFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_request_test"
+            app:destination="@id/requestTestFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+
+        <action
+            android:id="@+id/action_about"
+            app:destination="@id/nav_about"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_post_notification"
+            app:destination="@id/nav_post_notification"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_remove_exposed_message"
+            app:destination="@id/nav_remove_exposed_message_dialog" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_update_google_play_services"
+        android:name="nl.rijksoverheid.en.onboarding.GooglePlayServicesUpdateRequiredFragment"
+        tools:layout="@layout/fragment_google_play_services_upgrade_required" />
+
+    <include app:graph="@navigation/nav_onboarding" />
+
+    <fragment
+        android:id="@+id/nav_post_notification"
+        android:name="nl.rijksoverheid.en.notification.PostNotificationFragment"
+        android:label="PostNotificationFragment"
+        tools:layout="@layout/fragment_list">
+        <argument
+            android:name="epochDayOfLastExposure"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="nl.rijksoverheid.en.about.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_about_detail"
+            app:destination="@id/nav_about_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_detail"
+        android:name="nl.rijksoverheid.en.about.AboutDetailFragment"
+        android:label="AboutDetailFragment"
+        tools:layout="@layout/fragment_list">
+
+        <argument
+            android:name="faqItemId"
+            app:argType="nl.rijksoverheid.en.about.FAQItemId" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_lab_test"
+        android:name="nl.rijksoverheid.en.labtest.LabTestFragment"
+        android:label="LabTestFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_lab_test_done"
+            app:destination="@id/nav_lab_test_done"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/nav_lab_test"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_how_it_works"
+            app:destination="@id/nav_about_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lab_test_done"
+        android:name="nl.rijksoverheid.en.labtest.LabTestDoneFragment"
+        android:label="LabTestDoneFragment"
+        tools:layout="@layout/fragment_list">
+        <argument
+            android:name="generatedKey"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/genericNotificationFragment"
+        android:name="nl.rijksoverheid.en.notification.GenericNotificationFragment"
+        android:label="GenericNotificationFragment"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/requestTestFragment"
+        android:name="nl.rijksoverheid.en.requesttest.RequestTestFragment"
+        android:label="RequestTestFragment"
+        tools:layout="@layout/fragment_list" />
+
+    <dialog
+        android:id="@+id/nav_remove_exposed_message_dialog"
+        android:name="nl.rijksoverheid.en.status.RemoveExposedMessageDialogFragment"
+        android:label="RemoveExposedMessageDialogFragment" />
+
+    <fragment
+        android:id="@+id/nav_upload_keys_failed_notification"
+        android:name="nl.rijksoverheid.en.notification.UploadKeysFailedNotificationFragment"
+        android:label="GenericNotificationFragment"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        tools:layout="@layout/fragment_end_of_life"
+        android:id="@+id/nav_end_of_life"
+        android:name="nl.rijksoverheid.en.applifecycle.EndOfLifeFragment" />
+</navigation>

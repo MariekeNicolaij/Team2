@@ -1,0 +1,26 @@
+<!--
+  ~  Copyright (c) 2020 De Staat der Nederlanden, Ministerie van Volksgezondheid, Welzijn en Sport.
+  ~   Licensed under the EUROPEAN UNION PUBLIC LICENCE v. 1.2
+  ~
+  ~   SPDX-License-Identifier: EUPL-1.2
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#ED395A"
+        android:pathData="M48,24C48,37.2549 37.2548,48 24,48C10.7452,48 0,37.2549 0,24C0,10.7452 10.7452,0 24,0C37.2548,0 48,10.7452 48,24Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M24,39C24.2347,39 24.6015,38.9095 24.9682,38.7133C33.3154,34.2163 36,31.9678 36,26.5503V15.172C36,13.6177 35.3545,13.1197 34.1222,12.5915C32.4059,11.8672 26.9193,9.8149 25.2176,9.2113C24.8215,9.0754 24.4108,9 24,9C23.5892,9 23.1785,9.0905 22.7971,9.2113C21.0807,9.7847 15.5941,11.8823 13.8778,12.5915C12.6601,13.1046 12,13.6177 12,15.172V26.5503C12,31.9678 14.8313,33.9598 23.0318,38.7133C23.4132,38.9245 23.7653,39 24,39Z" />
+    <path
+        android:fillColor="#ED395A"
+        android:pathData="M22.1024,15.9974C22.0467,14.9112 22.9124,14 24,14C25.0876,14 25.9533,14.9112 25.8976,15.9974L25.4016,25.6684C25.3634,26.4146 24.7472,27 24,27C23.2528,27 22.6366,26.4146 22.5984,25.6684L22.1024,15.9974Z" />
+    <path
+        android:fillColor="#ED395A"
+        android:pathData="M24,31m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+</vector>

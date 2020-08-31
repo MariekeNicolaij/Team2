@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_onboarding"
+    app:startDestination="@id/explanationStep1">
+
+    <fragment
+        android:id="@+id/explanationStep1"
+        android:name="nl.rijksoverheid.en.onboarding.ExplanationFragment"
+        android:label="ExplanationFragment"
+        tools:layout="@layout/fragment_explanation">
+        <argument
+            android:name="fromFirstPage"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="isExample"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            android:defaultValue="@string/onboarding_explanation_1_headline"
+            app:argType="reference" />
+        <argument
+            android:name="description"
+            android:defaultValue="@string/onboarding_explanation_1_description"
+            app:argType="reference" />
+        <argument
+            android:name="illustration"
+            android:defaultValue="@drawable/illustration_explanation_step_1"
+            app:argType="reference" />
+        <argument
+            android:name="animation"
+            android:defaultValue="0"
+            app:argType="reference" />
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/explanationStep2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/explanationStep2"
+        android:name="nl.rijksoverheid.en.onboarding.ExplanationFragment"
+        android:label="ExplanationFragment"
+        tools:layout="@layout/fragment_explanation">
+        <argument
+            android:name="fromFirstPage"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <argument
+            android:name="isExample"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            android:defaultValue="@string/onboarding_explanation_2_headline"
+            app:argType="reference" />
+        <argument
+            android:name="description"
+            android:defaultValue="@string/onboarding_explanation_2_description"
+            app:argType="reference" />
+        <argument
+            android:name="illustration"
+            android:defaultValue="@drawable/illustration_explanation_step_2"
+            app:argType="reference" />
+        <argument
+            android:name="animation"
+            android:defaultValue="@raw/onboarding_explanation_2"
+            app:argType="reference" />
+        <action
+            android:id="@id/action_next"
+            app:destination="@id/explanationStep3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/explanationStep3"
+        android:name="nl.rijksoverheid.en.onboarding.ExplanationFragment"
+        android:label="ExplanationFragment"
+        tools:layout="@layout/fragment_explanation">
+        <argument
+            android:name="fromFirstPage"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="isExample"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            android:defaultValue="@string/onboarding_explanation_3_headline"
+            app:argType="reference" />
+        <argument
+            android:name="description"
+            android:defaultValue="@string/onboarding_explanation_3_description"
+            app:argType="reference" />
+        <argument
+            android:name="illustration"
+            android:defaultValue="@drawable/illustration_explanation_step_3"
+            app:argType="reference" />
+        <argument
+            android:name="animation"
+            android:defaultValue="@raw/onboarding_explanation_3"
+            app:argType="reference" />
+        <action
+            android:id="@id/action_next"
+            app:destination="@id/explanationExample1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/explanationExample1"
+        android:name="nl.rijksoverheid.en.onboarding.ExplanationFragment"
+        android:label="ExplanationFragment"
+        tools:layout="@layout/fragment_explanation">
+        <argument
+            android:name="fromFirstPage"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="isExample"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            android:defaultValue="@string/onboarding_example_1_headline"
+            app:argType="reference" />
+        <argument
+            android:name="description"
+            android:defaultValue="@string/onboarding_example_1_description"
+            app:argType="reference" />
+        <argument
+            android:name="illustration"
+            android:defaultValue="@drawable/illustration_explanation_example_1"
+            app:argType="reference" />
+        <argument
+            android:name="animation"
+            android:defaultValue="0"
+            app:argType="reference" />
+        <action
+            android:id="@id/action_next"
+            app:destination="@id/explanationExample2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/explanationExample2"
+        android:name="nl.rijksoverheid.en.onboarding.ExplanationFragment"
+        android:label="ExplanationFragment"
+        tools:layout="@layout/fragment_explanation">
+        <argument
+            android:name="fromFirstPage"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="isExample"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <argument
+            android:name="title"
+            android:defaultValue="@string/onboarding_example_2_headline"
+            app:argType="reference" />
+        <argument
+            android:name="description"
+            android:defaultValue="@string/onboarding_example_2_description"
+            app:argType="reference" />
+        <argument
+            android:name="illustration"
+            android:defaultValue="@drawable/illustration_explanation_example_2"
+            app:argType="reference" />
+        <argument
+            android:name="animation"
+            android:defaultValue="0"
+            app:argType="reference" />
+        <action
+            android:id="@id/action_next"
+            app:destination="@id/nav_privacy_policy_consent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_privacy_policy_consent"
+        android:name="nl.rijksoverheid.en.onboarding.PrivacyPolicyConsentFragment"
+        android:label="PrivacyPolicyConsentFragment"
+        tools:layout="@layout/fragment_privacy_policy_consent">
+
+        <action
+            android:id="@id/action_next"
+            app:destination="@id/nav_enable_api" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_enable_api"
+        android:name="nl.rijksoverheid.en.onboarding.EnableApiFragment"
+        tools:layout="@layout/fragment_enable_api">
+        <action
+            android:id="@+id/action_explain"
+            app:destination="@id/nav_how_it_works"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_skip_consent_confirmation"
+            app:destination="@id/nav_skip_consent_confirmation" />
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/nav_share" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_how_it_works"
+        android:name="nl.rijksoverheid.en.onboarding.HowItWorksFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_how_it_works_detail"
+            app:destination="@id/nav_how_it_works_detail" />
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/nav_share" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_how_it_works_detail"
+        android:name="nl.rijksoverheid.en.onboarding.HowItWorksDetailFragment"
+        tools:layout="@layout/fragment_list">
+        <argument
+            android:name="faqItemId"
+            app:argType="nl.rijksoverheid.en.about.FAQItemId" />
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/nav_share" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/nav_skip_consent_confirmation"
+        android:name="nl.rijksoverheid.en.onboarding.SkipConsentConfirmationDialogFragment"
+        android:label="SkipConsentConfirmationDialogFragment">
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/nav_share" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="nl.rijksoverheid.en.onboarding.ShareFragment"
+        android:label="ShareFragment"
+        tools:layout="@layout/fragment_share" />
+</navigation>

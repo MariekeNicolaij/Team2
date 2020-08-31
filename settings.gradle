@@ -1,0 +1,6 @@
+include ':signing'
+include ':test-support'
+include ':en-api'
+include ':play-services-nearby-eap'
+include ':app'
+include ':api'
