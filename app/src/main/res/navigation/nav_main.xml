@@ -53,6 +53,14 @@
             app:popExitAnim="@anim/fragment_close_exit" />
 
         <action
+            android:id="@+id/action_regiomap"
+            app:destination="@id/nav_regiomap"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+
+        <action
             android:id="@+id/action_about"
             app:destination="@id/nav_about"
             app:enterAnim="@anim/fragment_open_enter"
@@ -69,6 +77,20 @@
         <action
             android:id="@+id/action_remove_exposed_message"
             app:destination="@id/nav_remove_exposed_message_dialog" />
+        <action
+            android:id="@+id/action_history"
+            app:destination="@id/nav_history"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_settings"
+            app:destination="@id/nav_settings"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
 
     </fragment>
 
@@ -90,6 +112,43 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_regiomap"
+        android:name="nl.rijksoverheid.en.map.MapFragment"
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_livemap"
+            app:destination="@id/nav_livemap"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_livemap"
+        android:name="nl.rijksoverheid.en.map.MapFragment"
+        android:label="MapFragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="nl.rijksoverheid.en.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="nl.rijksoverheid.en.history.HistoryFragment"
+        android:label="HistoryFragment" >
+        <action
+            android:id="@+id/action_nav_history_to_nav_history_news"
+            app:destination="@id/nav_history_news"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_history_news"
+        android:name="nl.rijksoverheid.en.history.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
         android:id="@+id/nav_about"
         android:name="nl.rijksoverheid.en.about.AboutFragment"
         android:label="AboutFragment"
@@ -98,6 +157,7 @@
             android:id="@+id/action_about_detail"
             app:destination="@id/nav_about_detail" />
     </fragment>
+
 
     <fragment
         android:id="@+id/nav_about_detail"

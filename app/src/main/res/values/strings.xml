@@ -1,7 +1,33 @@
 <?xml version="1.0"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="zero"> </string>
     <string name="app_name">CoronaMelder</string>
     <!-- used to determine language for this translation, independent of system settings -->
+
+    <string name="status_info_map_title">Map</string>
+    <string name="map_toolbar_title">Map</string>
+    <string name="map_main_text">Lorem ipsum something something</string>
+    <string name="map_button_regional">Regional map</string>
+    <string name="map_button_live">Live map</string>
+    <string name="map_regional_text">For a more current image turn on your location. This helps yourself and others.</string>
+
+    <string name="status_info_history_title">Notifications</string>
+    <string name="history_toolbar_title">Notifications</string>
+    <string name="history_main_text">Lorem ipsum something something</string>
+    <string name="history_notification_names">\t \t \t  \t \t Time \t \t \t \t \t Date  \t \t \t \t \t Location</string>
+    <string name="history_notification_1">16:20 \t \t 20st of April \t \t  \t \t  \t \t \t <u>Location</u></string>
+    <string name="history_notification_2">14:16 \t \t 25th of August \t \t  \t \t <u>Location</u></string>
+    <string name="history_notification_3">17:27 \t \t 1st of September \t \t <u>Location</u></string>
+    <string name="history_news_title">News</string>
+    <string name="history_news_text">Read about recent news about COVID-19</string>
+    <string name="history_news_1">News #1</string>
+    <string name="history_news_2">News #2</string>
+    <string name="history_news_3">News #3</string>
+
+    <string name="status_info_settings_title">Settings</string>
+    <string name="settings_toolbar_title">Settings</string>
+    <string name="settings_main_text">Lorem ipsum something something</string>
+
     <string name="app_language">en</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_example">Example</string>
@@ -82,15 +108,15 @@
     <string name="status_dialog_remove_exposure_confirm">Delete</string>
     <string name="status_dialog_remove_exposure_cancel">Cancel</string>
     <string name="status_info_about_title">About the app</string>
-    <string name="status_info_about_subtitle">See how the app works and what it means for your privacy</string>
+    <string name="status_info_about_subtitle"> </string>
     <string name="status_info_share_title">Invite others to the app</string>
-    <string name="status_info_share_subtitle">Share the app with others to stop corona together</string>
+    <string name="status_info_share_subtitle"> </string>
     <string name="status_info_notification_title">What does a notification say?</string>
-    <string name="status_info_notification_subtitle">Read about what you can do when you\'ve been near someone with coronavirus</string>
+    <string name="status_info_notification_subtitle"> </string>
     <string name="status_info_test_title">Get tested for coronavirus</string>
-    <string name="status_info_test_subtitle">Find out as soon as possible if you\'re infected</string>
+    <string name="status_info_test_subtitle"> </string>
     <string name="status_info_lab_title">Share the GGD key</string>
-    <string name="status_info_lab_subtitle">Send an anonymous notification with the GGD to others if you\'re infected</string>
+    <string name="status_info_lab_subtitle"> </string>
     <string name="status_app_version">Version %1$s build %2$s</string>
     <string name="status_exposure_what_next">What can I do now?</string>
     <string name="status_error_consent_required">%1$s only works when the necessary settings are turned on.</string>
@@ -99,11 +125,11 @@
     <string name="status_error_action_sync_issues">Try again</string>
     <string name="about_toolbar_title">About the app</string>
     <string name="about_helpdesk_title">Other questions about the app?</string>
-    <string name="about_helpdesk_subtitle">Call the help desk</string>
+    <string name="about_helpdesk_subtitle"> </string>
     <string name="about_technical_explanation_title">How does the app work?</string>
-    <string name="about_technical_explanation_subtitle">Check the technical explanation</string>
+    <string name="about_technical_explanation_subtitle"> </string>
     <string name="about_onboarding_title">Wat does CoronaMelder do?</string>
-    <string name="about_onboarding_subtitle">Read how you can help stop the spread of the coronavirus with this app</string>
+    <string name="about_onboarding_subtitle"> </string>
     <string name="about_review">Rate the app</string>
     <string name="about_privacy_statement">Privacy statement</string>
     <string name="about_accessibility">Accessibility</string>

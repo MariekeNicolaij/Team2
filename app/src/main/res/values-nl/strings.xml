@@ -1,7 +1,33 @@
 <?xml version="1.0"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="zero"> </string>
     <string name="app_name">CoronaMelder</string>
     <!-- used to determine language for this translation, independent of system settings -->
+
+    <string name="status_info_map_title">Kaart</string>
+    <string name="map_toolbar_title">Kaart</string>
+    <string name="map_main_text">Lorem ipsum nog wat nog wat</string>
+    <string name="map_button_regional">Regionaal kaart</string>
+    <string name="map_button_live">Live kaart</string>
+    <string name="map_regional_text">Voor een meer actueel beeld zet uw locatie aan. Dit helpt uzelf en anderen.</string>
+
+    <string name="status_info_history_title">Melding geschiedenis</string>
+    <string name="history_toolbar_title">Melding geschiedenis</string>
+    <string name="history_main_text">Bekijk hier uw corona meldingen</string>
+    <string name="history_notification_names">\t \t \t  \t \t Tijd \t \t \t \t \t Datum  \t \t \t \t \t Locatie</string>
+    <string name="history_notification_1">16:20 \t \t 20 april \t \t  \t \t  \t \t \t <u>Drachten</u></string>
+    <string name="history_notification_2">14:16 \t \t 25 august \t \t  \t \t <u>Groningen</u></string>
+    <string name="history_notification_3">17:27 \t \t 1 september \t \t <u>Groningen</u></string>
+    <string name="history_news_text">Lees over recent nieuws over COVID-19</string>
+    <string name="history_news_title">Nieuws</string>
+    <string name="history_news_1"><u>Nieuwe update COVID-19 maatregelen</u></string>
+    <string name="history_news_2"><u>Meer COVID-19 meldingen dan vorige maand</u></string>
+    <string name="history_news_3"><u>Nieuw COVID-19 medicijn onderweg</u></string>
+
+    <string name="status_info_settings_title">Instellingen</string>
+    <string name="settings_toolbar_title">Instellingen</string>
+    <string name="settings_main_text">Lorem ipsum something something</string>
+
     <string name="app_language">nl</string>
     <string name="onboarding_next">Volgende</string>
     <string name="onboarding_example">Voorbeeld</string>
@@ -82,15 +108,15 @@
     <string name="status_dialog_remove_exposure_confirm">Verwijder</string>
     <string name="status_dialog_remove_exposure_cancel">Annuleer</string>
     <string name="status_info_about_title">Over de app</string>
-    <string name="status_info_about_subtitle">Bekijk hoe de app werkt en wat dit voor je privacy betekent</string>
+    <string name="status_info_about_subtitle"> </string>
     <string name="status_info_share_title">Mensen uitnodigen voor de app</string>
-    <string name="status_info_share_subtitle">Deel de app met anderen om samen corona te stoppen</string>
+    <string name="status_info_share_subtitle"> </string>
     <string name="status_info_notification_title">Wat staat er in een melding?</string>
-    <string name="status_info_notification_subtitle">Lees wat je kunt doen nadat je in de buurt bent geweest van iemand met corona</string>
+    <string name="status_info_notification_subtitle"> </string>
     <string name="status_info_test_title">Coronatest aanvragen</string>
-    <string name="status_info_test_subtitle">Ontdek zo snel mogelijk of je zelf besmet bent</string>
+    <string name="status_info_test_subtitle"> </string>
     <string name="status_info_lab_title">GGD-sleutel doorgeven</string>
-    <string name="status_info_lab_subtitle">Stuur met de GGD een anonieme melding naar anderen als je besmet bent</string>
+    <string name="status_info_lab_subtitle"> </string>
     <string name="status_app_version">Versie %1$s build %2$s</string>
     <string name="status_exposure_what_next">Wat kan ik nu doen?</string>
     <string name="status_error_consent_required">%1$s werkt alleen als de noodzakelijke instellingen aanstaan</string>
@@ -99,11 +125,11 @@
     <string name="status_error_action_sync_issues">Probeer opnieuw</string>
     <string name="about_toolbar_title">Over de app</string>
     <string name="about_helpdesk_title">Andere vraag over de app?</string>
-    <string name="about_helpdesk_subtitle">Bel de helpdesk</string>
+    <string name="about_helpdesk_subtitle"> </string>
     <string name="about_technical_explanation_title">Hoe werkt de app?</string>
-    <string name="about_technical_explanation_subtitle">Bekijk de technische uitleg</string>
+    <string name="about_technical_explanation_subtitle"> </string>
     <string name="about_onboarding_title">Wat doet CoronaMelder?</string>
-    <string name="about_onboarding_subtitle">Lees hoe je met deze app kunt helpen corona te stoppen</string>
+    <string name="about_onboarding_subtitle"> </string>
     <string name="about_review">Beoordeel de app</string>
     <string name="about_privacy_statement">Privacyverklaring</string>
     <string name="about_accessibility">Toegankelijkheid</string>

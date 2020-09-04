@@ -60,6 +60,16 @@ class StatusFragment @JvmOverloads constructor(
         binding.content.adapter = adapter
         adapter.setOnItemClickListener { item, _ ->
             when (item) {
+                StatusActionItem.Settings -> findNavController().navigateCatchingErrors(
+                    StatusFragmentDirections.actionSettings()
+                )
+                StatusActionItem.Map -> findNavController().navigateCatchingErrors(
+                    StatusFragmentDirections.actionRegiomap()
+                )
+
+                StatusActionItem.History -> findNavController().navigateCatchingErrors(
+                    StatusFragmentDirections.actionHistory()
+                )
                 StatusActionItem.About -> findNavController().navigateCatchingErrors(
                     StatusFragmentDirections.actionAbout()
                 )

@@ -45,6 +45,30 @@ sealed class StatusActionItem(
         viewBinding.infoSubtitle = subtitle
     }
 
+    object Settings : StatusActionItem(
+        R.drawable.ic_baseline_settings_24,
+        R.string.status_info_settings_title,
+        R.string.status_info_about_subtitle
+    ) {
+        override fun isSameAs(other: Item<*>) = other is About
+    }
+
+    object Map : StatusActionItem(
+        R.drawable.ic_baseline_map_24,
+        R.string.status_info_map_title,
+        R.string.status_info_about_subtitle
+    ) {
+        override fun isSameAs(other: Item<*>) = other is About
+    }
+
+    object History : StatusActionItem(
+        R.drawable.ic_baseline_notifications_24,
+        R.string.status_info_history_title,
+        R.string.status_info_about_subtitle
+    ) {
+        override fun isSameAs(other: Item<*>) = other is About
+    }
+
     object About : StatusActionItem(
         R.drawable.ic_info,
         R.string.status_info_about_title,
@@ -56,7 +80,7 @@ sealed class StatusActionItem(
     object Share : StatusActionItem(
         R.drawable.ic_share,
         R.string.status_info_share_title,
-        R.string.status_info_share_subtitle
+        R.string.status_info_about_subtitle
     ) {
         override fun isSameAs(other: Item<*>) = other is Share
     }
@@ -64,7 +88,7 @@ sealed class StatusActionItem(
     object GenericNotification : StatusActionItem(
         R.drawable.ic_warning,
         R.string.status_info_notification_title,
-        R.string.status_info_notification_subtitle
+        R.string.status_info_about_subtitle
     ) {
         override fun isSameAs(other: Item<*>) = other is GenericNotification
     }
@@ -72,7 +96,7 @@ sealed class StatusActionItem(
     object RequestTest : StatusActionItem(
         R.drawable.ic_test,
         R.string.status_info_test_title,
-        R.string.status_info_test_subtitle
+        R.string.status_info_about_subtitle
     ) {
         override fun isSameAs(other: Item<*>) = other is RequestTest
     }
@@ -80,7 +104,7 @@ sealed class StatusActionItem(
     object LabTest : StatusActionItem(
         R.drawable.ic_virus,
         R.string.status_info_lab_title,
-        R.string.status_info_lab_subtitle
+        R.string.status_info_about_subtitle
     ) {
         override fun isSameAs(other: Item<*>) = other is LabTest
     }
